@@ -1,0 +1,69 @@
+// out: ../../css/components/modal.css, compress: true, sourceMap: false
+
+// ------------------------------------------
+// Block '.modal'
+// ------------------------------------------
+.modal{
+    position: fixed;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-out;    
+
+    &.open{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    & &__close{
+        position: absolute;
+        top: -40px;
+        right: -40px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        cursor: pointer;
+        outline: none;
+    }
+
+    & &__overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(52, 73, 94, 0.8);
+        z-index: 50;
+    }
+
+    & &__body{
+        position: relative;
+        height: 90%;
+        background: #000;
+        z-index: 100;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+        
+        transition: 0.5s ease-out;
+
+        video{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

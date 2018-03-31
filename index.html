@@ -256,8 +256,8 @@
 
                     <!-- Form -->
                     <form class="block__form">
-                        <input type="email" class="block__form-input input">
-                        <a href="" class="btn">SUBSCRIBE</a>
+                        <input type="email" class="block__form-input input" placeholder="E-mail address">
+                        <a href="" class="block__form-btn btn">SUBSCRIBE</a>
                     </form>
                 </div>
 
@@ -284,16 +284,28 @@
                         </a>
                     </div>
                     <div class="block__social">
-                        <a href="" class="block__social-link">
+                        <a href="https://t.me/dicegame_platform" class="block__social-link" target="_blank">
                             <img src="assets/svg/telegram.svg" alt="">
                         </a>
-                        <a href="" class="block__social-link">
+                        <a href="https://www.instagram.com/dicegameteam/?hl=ru" class="block__social-link" target="_blank">
                             <img src="assets/svg/insta.svg" alt="">
                         </a>
                     </div>
                 </div>
         </div>
     </main>
+
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <button class="modal__close">X</button>
+
+            <video id="video-promo" class="player__video" width="400" controls="">
+                <source src="assets/video/video-dicegame.mp4" type="video/mp4">
+                <!-- <source src="assets/video/video-dicegame..ogg" type="video/ogg"> -->
+            </video>
+        </div>
+    </div>
 
 
     <!-- script -->
@@ -303,6 +315,7 @@
     <!--<![endif]-->
     <script src="assets/js/clock.js"></script>
     <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/modal.js"></script>
     <!-- /script -->
 
 
