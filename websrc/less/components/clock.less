@@ -553,13 +553,44 @@
 
 @media (min-width: 320px) and (max-width: 767px){
 
-    .flip-clock-wrapper ul{
-        width: 32px;
-        height: 40px;
-        line-height: 40px;
-        
-        li{
+    .flip-clock-wrapper{
+        display: inline-block;
+        width: auto;
+
+        ul{
+            width: 32px;
+            height: 40px;
             line-height: 40px;
+            
+            li{
+                line-height: 40px;
+            }
+        }
+    }
+
+    .flip-clock-divider{
+        height: 45px;
+
+        .flip-clock-label{
+            right: -54px;
+        }
+        
+        &.hours{
+            .flip-clock-label{
+                right: -60px;
+            }
+        }
+        
+        &.minutes{
+            .flip-clock-label{
+                right: -65px;
+            }
+        }
+        
+        &.seconds{
+            .flip-clock-label{
+                right: -70px;
+            }
         }
     }
 
