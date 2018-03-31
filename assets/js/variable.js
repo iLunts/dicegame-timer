@@ -35,7 +35,7 @@ var _animationDuration = 1750; // animation duration
 countdown
 ==============================================================================*/
 var _countdown = true; // countdown toggle
-var _countdownDate = '12/24/2020 23:59:59'; // 2015-12-24 23:59:59
+var _countdownDate = '06/01/2018 23:59:59'; // 2018-06-01 23:59:59
 var _countdownTimezone = '-8'; // timezone
 
 /*=================================================
@@ -53,7 +53,7 @@ _bgStyle = 2
   - slideshow
 =================================================*/
 var _imgAmount = 2; // min = 2, how many image at slideshow, file name slideshow-01.jpg, slideshow-02.jpg...slideshow-10.jpg etc
-var _kenburn = 2; // 1 = kenburn effect slideshow, 2 = normal slideshow
+var _kenburn = 1; // 1 = kenburn effect slideshow, 2 = normal slideshow
 
 /*=================================================
 _bgStyle = 3
