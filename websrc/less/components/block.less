@@ -20,9 +20,10 @@
     // Element '.block .block__title'
     & &__title{
         margin: 60px 0;
-        font-size: 30px;
+        font-size: 26px;
         line-height: 30px;
-        font-weight: 400;
+        font-weight: 500;
+        color: rgba(255, 255, 255, .8);
     }
 
     // Element '.block .block__soon'
@@ -54,9 +55,14 @@
             font-size: 17px;
             line-height: 17px;
             font-weight: 300;
-            color: #fff;
+            color: rgba(255, 255, 255, .8);
             text-decoration: none;
             padding: 2px 60px 2px 30px;
+            transition: all .2s;
+
+            &:hover{
+                color: #fff;
+            }
 
             &:before{
                 content: '';
