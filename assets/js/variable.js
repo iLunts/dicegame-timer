@@ -88,7 +88,7 @@ var _effect = 2; // 0 = disable, 1 = cloud, 2 = star
 _effect = 1
   - cloud
 =================================================*/
-var _cloudOpacity = 0.3; // [0.1 to 1] - cloud opacity
+var _cloudOpacity = 0.4; // [0.1 to 1] - cloud opacity
 var _cloudPosition = 2; // 1 = default, 2 = bottom
 var _cloud1Duration = 52000; // how many seconds does the cloud 1 animation
 var _cloud2Duration = 107000; // how many seconds does the cloud 2 animation
