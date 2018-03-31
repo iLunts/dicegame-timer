@@ -1,0 +1,128 @@
+// out: ../../css/components/device.css, compress: true, sourceMap: false
+
+// ------------------------------------
+// Block '.device'
+// ------------------------------------
+// iPhone X
+@device-silver: #e2e3e4;
+@device-silver-dark: darken(@device-silver, 10%);
+@device-silver-panel: #222;
+
+.device {
+    position: relative;
+    transform: scale(1);
+    display: inline-block;
+    font-size: 10px; 
+    
+    // Modificator '.device.device--sm'
+    &.device--sm {
+        font-size: 5px;
+    }
+}
+
+.device-iphone-x {
+    height: 86.8em;
+    width: 42.8em;
+    .device-frame {
+        background: @device-silver-panel;
+        border-radius: 6.8em;
+        //height: 74.5em;
+        padding: 1.2em;
+        //width: 42.8em;
+        height: 86.8em;
+        width: 42.8em;
+        box-shadow: 0px 5px 30px 0 rgba(0, 0, 0, 0.15);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        video {
+            position: absolute;
+            min-width: 96%;
+            min-height: 96%;
+            top: 2%;
+            left: 2%;
+            width: 96%;
+            height: 96%;
+            object-fit: fill;
+        }
+    } 
+    // 2436-by-1125-pixel resolution
+    .device-content {
+        border-radius: 6em;
+        height: 86.8em;
+        width: 42.8em;
+        overflow: hidden;
+        cursor: pointer;
+        &.device-content--fm {
+            // background-color: #6F5163;
+
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#264651+0,1c343d+100 */
+            background: rgb(38,70,81); /* Old browsers */
+            background: -moz-linear-gradient(top, rgba(38,70,81,1) 0%, rgba(28,52,61,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(38,70,81,1) 0%,rgba(28,52,61,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(38,70,81,1) 0%,rgba(28,52,61,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#264651', endColorstr='#1c343d',GradientType=0 ); /* IE6-9 */
+
+            text-align: center;
+        }
+        .btn{
+            position: absolute;
+        }
+    } 
+    
+    .device-header {
+        position: absolute;
+        background: @device-silver-panel; 
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 2em;
+        height: 3.0em;
+        left: 50%;
+        margin-left: -10.2em;
+        top: 1.2em;
+        width: 20.4em;
+        &::after,
+        &::before {
+            content: "";
+            height: 10px;
+            position: absolute;
+            top: 0;
+            width: 10px;
+        }
+        &::after {
+            background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, @device-silver-panel 75%, @device-silver-panel 100%);
+            left: -10px;
+        }
+        &::before {
+            background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, @device-silver-panel 75%, @device-silver-panel 100%);
+            right: -10px;
+        }
+    }
+    .device-sensors {
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+        }
+        &::after {
+            background: #444;
+            border-radius: .3em;
+            height: .6em;
+            left: 50%;
+            margin-left: -2.5em;
+            top: 2em;
+            width: 5em;
+        }
+        &::before {
+            background: #444;
+            border-radius: 50%;
+            height: 1.4em;
+            left: 50%;
+            margin-left: 40px;
+            top: 1.4em;
+            width: 1.4em;
+        }
+    } 
+}

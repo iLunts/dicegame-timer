@@ -1,5 +1,4 @@
-<html class="no-js fixed desktop landscape non-mobile" lang="en">
-<!--<![endif]-->
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,242 +7,81 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <title>TITLE</title>
+    <title>Dicegame</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/color.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/vendor.css">
-    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.min.css">
     
-    <style id="js-css">
-        .light #overlay {
-            background-color: rgba(255, 255, 255, 0.4);
-        }
-
-        .light #form {
-            background-color: rgba(62, 68, 89, 0.8);
-        }
-
-        .dark #overlay {
-            background-color: rgba(0, 0, 0, 0.4);
-        }
-
-        .dark #form {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-    </style>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon-32.png">
 </head>
 
 <body>
-
-    <!-- loader -->
-    <div id="site-loader">
-        <div class="loader"></div>
-    </div>
-    <!-- loader -->
-
-    <!-- /demo panel -->
-    <!-- <div id="demo-panel">
-        <div class="options-color">
-            <h4 class="options-title">Options</h4>
-            <ul class="options-ul">
-                <li>
-                    <a href="#" data-border="is-border">Border</a>
-                </li>
-                <li>
-                    <a href="#" data-border="non-border">Non-Border</a>
-                </li>
-                <li>
-                </li>
-            </ul>
-        </div>
-        <a href="#" class="demo-panel-toggle">
-            <i class="icons ion-gear-b"></i>
-        </a>
-    </div> -->
-    <!-- /demo panel -->
-
-    <!-- site wrap -->
-    <div id="site-wrap">
-
-        <!-- background -->
-        <div id="bg">
-            <div id="img">
-                <div class="slide"></div>
-                <div class="slide velocity-animating"></div>
-            </div>
-
-            <div id="overlay"></div>
-
-            <canvas id="js-canvas"></canvas>
-        </div>
-        <!-- /background -->
-
-        <!-- site header -->
-        <header id="site-header">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <!-- header brand -->
-                        <div class="header-brand">
-                            <img class="header-logo logo-light" src="assets/svg/logo-light.svg" alt="">
-                            <img class="header-logo logo-dark" src="assets/svg/logo-dark.svg" alt="">
-                        </div>
-                        <!-- header brand -->
-
-                        <!-- header toggle-->
-                        <div class="header-toggle">
-                            <div id="menu-toggle" class="toggle">
-                                <i class="ion-ios-email"></i>
-                            </div>
-                        </div>
-                        <!-- /header toggle -->
-                    </div>
+    <main class="container">
+        <div class="block block--gray block--main">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="logo" src="assets/svg/logo-light.svg" alt="" width="150">
                 </div>
             </div>
-        </header>
-        <!-- /site header -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="block__title">
+                        NEXT GENERATION OF FACE TO FACE iGAMING
+                    </h1>
+                    <p class="block__soon">
+                        COMING SOON:
+                    </p>
 
-        <!-- subscribe -->
-        <div id="form" class="ps-container">
-            <div id="subscribe">
-                <div class="tb-cell">
-                    <p class="animation section-subtitle">Subscribe to get notified.</p>
-                    <h2 class="section-title">Newsletter</h2>
-                    
-                    <!-- subscribe form -->
-                    <form id="form-subscribe" class="form-lg container" novalidate="novalidate">
-                        <input type="text" name="email" class="form-control" placeholder="Email address">
-                        <button type="submit">
-                            <i class="ion-email"></i>
-                        </button>
+                    <form class="block__form">
+                        <input type="email" class="block__form-input input">
+                        <a href="" class="btn">SUBSCRIBE</a>
                     </form>
-                    <!-- /subscribe form -->
                 </div>
-            </div>
-            <div class="ps-scrollbar-x-rail">
-                <div class="ps-scrollbar-x"></div>
-            </div>
-            <div class="ps-scrollbar-y-rail">
-                <div class="ps-scrollbar-y"></div>
-            </div>
-        </div>
-        <!-- /subscribe -->
-
-        <!-- site main -->
-        <main id="site-main">
-            <!-- home -->
-            <section id="home" class="ps-container">
-                <div class="section-wrap">
-                    <div class="section-cell">
-                        <div class="container">
-                            <!-- section header -->
-                            <div class="section-header row text-center">
-                                <div class="col-xs-12">
-                                    <p class="animation section-subtitle">Be ready, we are launching soon.</p>
-                                    <h1 class="section-title">DICEGAME</h1>
-                                </div>
-                                <div class="animation section-divider"></div>
+                <div class="col-lg-4 t--r">
+                    <div class="device device--sm device-iphone-x">
+                        <div class="device-frame">
+                            <div class="device-content device-content--fm">
+                    
+                                <video id="device-video">
+                                    <source src="assets/video/video-dicegame.mp4" type="video/mp4">
+                                    <!-- <source src="assets/video/video-dicegame.ogg" type="video/ogg"> -->
+                                </video>
+                    
+                                <button class="btn btn--play"></button>
                             </div>
-                            <!-- /setion header -->
-
-                            <!-- section main -->
-                            <div class="section-main row">
-                                <div class="col-xs-12">
-                                    <!-- countdown -->
-                                    <div id="countdown" class="animation-04">
-                                        <div class="row">
-                                            <div class="col-xs-3 col-countdown">
-                                                <div class="countdown-section">
-                                                    <div class="countdown-amount days">1000</div>
-                                                    <div class="countdown-period days_ref">Days</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-3 col-countdown">
-                                                <div class="countdown-section">
-                                                    <div class="countdown-amount hours">00</div>
-                                                    <div class="countdown-period hours_ref">Hours</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-3 col-countdown">
-                                                <div class="countdown-section">
-                                                    <div class="countdown-amount minutes">07</div>
-                                                    <div class="countdown-period minutes_ref">Minutes</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-3 col-countdown">
-                                                <div class="countdown-section">
-                                                    <div class="countdown-amount seconds">15</div>
-                                                    <div class="countdown-period seconds_ref">Seconds</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /countdown -->
-                                </div>
-                            </div>
-                            <!-- /setion main -->
                         </div>
+                        <div class="device-stripe"></div>
+                        <div class="device-header"></div>
+                        <div class="device-sensors"></div>
+                        <div class="device-btns"></div>
+                        <div class="device-power"></div>
+                        <div class="device-home"></div>
                     </div>
                 </div>
-                <div class="ps-scrollbar-x-rail">
-                    <div class="ps-scrollbar-x"></div>
-                </div>
-                <div class="ps-scrollbar-y-rail">
-                    <div class="ps-scrollbar-y"></div>
-                </div>
-            </section>
-            <!-- /home -->
-
-        </main>
-        <!-- /site main -->
-
-        <!-- site footer -->
-        <footer id="site-footer">
-            <!-- footer social -->
-            <a href="#" id="volume">
-                <span class="velocity-animating"></span>
-                <span class="velocity-animating"></span>
-                <span class="velocity-animating"></span>
-                <span class="velocity-animating"></span>
-            </a>
-            <div id="footer-social">
-                <a href="#" title="" target="_blank">
-                    <i class="ion-social-twitter"></i>
-                </a>
-                <a href="#" title="" target="_blank">
-                    <i class="ion-social-googleplus"></i>
-                </a>
-                <a href="#" title="" target="_blank">
-                    <i class="ion-social-instagram-outline"></i>
-                </a>
-                <a href="#" title="" target="_blank">
-                    <i class="ion-social-facebook"></i>
-                </a>
             </div>
-            <!-- /footer social -->
-        </footer>
-        <!-- /site footer -->
+            <div class="row">
+                <div class="col-lg-10 block__page">
+                    <a href="" class="block__page-link">
+                        OnePage
+                    </a>
+                </div>
+                <div class="col-lg-2 block__social">
+                    <a href="" class="block__social-link">
+                        <img src="" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
 
-        <!-- audio -->
-        <audio id="audio-player" loop="">
-            <source src="assets/audio/audio.mp3" type="audio/mpeg">
-        </audio>
-        <!-- audio -->
-    </div>
-    <!-- /site wrap -->
 
     <!-- script -->
     <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
     <!--[if lte IE 9]><!-->
     <script src="assets/js/vendor/html5shiv.min.js"></script>
     <!--<![endif]-->
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-    <script src="assets/js/vendor/vendor.js"></script>
-    <script src="assets/js/variable.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scripts.js"></script>
     <!-- /script -->
 
 
