@@ -1,5 +1,154 @@
 // out: ../../css/components/utilits.css, compress: true, sourceMap: false
 
+// New breadckpoint
+@breakpoint-xs-min:                  320px;
+@breakpoint-sm-min:                  768px;
+@breakpoint-md-min:                  1024px;
+@breakpoint-lg-min:                  1220px;
+@breakpoint-xlg-min:                 1600px;
+@breakpoint-xs-max:                  (@breakpoint-sm-min - 1);
+@breakpoint-sm-max:                  (@breakpoint-md-min - 1);
+@breakpoint-md-max:                  (@breakpoint-lg-min - 1);
+@breakpoint-lg-max:                  (@breakpoint-xlg-min - 1);
+
+// ----------------------------------------------------------------------------
+
 .t--r{
     text-align: right !important;
+}
+
+// ---------------------------------------------------------------------------
+// size: xSmall
+// ----------------------------------------------------------------------------
+@media only screen and (max-width: @breakpoint-xs-max) and (min-width: @breakpoint-xs-min) {
+    .hidden {
+        // Element '.hidden--xs'
+        &--xs {
+            display: none !important;
+        }
+    }
+    .visible {
+        // Element '.visible--sm'
+        &--sm {
+            display: none !important;
+        } // Element '.visible--md'
+        &--md {
+            display: none !important;
+        } // Element '.visible--lg'
+        &--lg {
+            display: none !important;
+        } // Element '.visible--xlg'
+        &--xlg {
+            display: none !important;
+        }
+    } 
+} 
+
+// ----------------------------------------------------------------------------
+// size: Small
+// ----------------------------------------------------------------------------
+@media only screen and (max-width: @breakpoint-sm-max) and (min-width: @breakpoint-sm-min) {
+    .hidden {
+        // Element '.hidden--sm'
+        &--sm {
+            display: none !important;
+        }
+    }
+    .visible {
+        // Element '.visible--xs'
+        &--xs {
+            display: none !important;
+        } // Element '.visible--md'
+        &--md {
+            display: none !important;
+        } // Element '.visible--lg'
+        &--lg {
+            display: none !important;
+        } // Element '.visible--xlg'
+        &--xlg {
+            display: none !important;
+        }
+    }
+}
+
+// ----------------------------------------------------------------------------
+// size: Medium
+// ----------------------------------------------------------------------------
+@media only screen and (max-width: @breakpoint-md-max) and (min-width: @breakpoint-md-min) {
+    .hidden {
+        // Element '.hidden--md'
+        &--md {
+            display: none !important;
+        }
+    }
+    .visible {
+        // Element '.visible--xs'
+        &--xs {
+            display: none !important;
+        } // Element '.visible--sm'
+        &--sm {
+            display: none !important;
+        } // Element '.visible--lg'
+        &--lg {
+            display: none !important;
+        } // Element '.visible--xlg'
+        &--xlg {
+            display: none !important;
+        }
+    }
+}
+
+// ----------------------------------------------------------------------------
+// size: Large
+// ----------------------------------------------------------------------------
+@media only screen and (max-width: @breakpoint-lg-max) and (min-width: @breakpoint-lg-min) {
+    .hidden {
+        // Element '.hidden--lg' 
+        &--lg {
+            display: none !important;
+        }
+    }
+    .visible {
+        // Element '.visible--xs'
+        &--xs {
+            display: none !important;
+        } // Element '.visible--sm'
+        &--sm {
+            display: none !important;
+        } // Element '.visible--md'
+        &--md {
+            display: none !important;
+        } // Element '.visible--xlg'
+        &--xlg {
+            display: none !important;
+        }
+    }
+}
+
+// ----------------------------------------------------------------------------
+// size: xLarge
+// ----------------------------------------------------------------------------
+@media only screen and (min-width: @breakpoint-xlg-min) {
+    // Element '.hidden'
+    .hidden {
+        // Element '.hidden--xlg'
+        &--xlg {
+            display: none !important;
+        }
+    }
+    .visible {
+        // Element '.visible--sm'
+        &--sm {
+            display: none !important;
+        } // Element '.visible--xs'
+        &--xs {
+            display: none !important;
+        } // Element '.visible--md'
+        &--md {
+            display: none !important;
+        } // Element '.visible--lg'
+        &--lg {
+            display: none !important;
+        }
+    }
 }
