@@ -14,6 +14,43 @@
     
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon-32.png">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PW69XD5');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Mailchimp -->
+    <script id=“mcjs”>
+        ! function (c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(
+                m, p);
+        }(document, 'script',
+            'https://chimpstatic.com/mcjs-connected/js/users/2c5daa930c3d4727f3bdda0c2/e7e2a3af54e242f08de760257.js');
+    </script>
+    <!-- end Mailchimp -->
+
+    <script id="mcjs">
+        ! function (c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(
+                m, p);
+        }(document, 'script',
+            'https://chimpstatic.com/mcjs-connected/js/users/2c5daa930c3d4727f3bdda0c2/e7e2a3af54e242f08de760257.js');
+    </script>
 </head>
 
 <body>
@@ -255,10 +292,19 @@
                     <div class="message"></div>
 
                     <!-- Form -->
-                    <form class="block__form hidden--xs">
-                        <input type="email" class="block__form-input input" placeholder="E-mail address">
-                        <a href="" class="block__form-btn btn">SUBSCRIBE</a>
-                    </form>
+                    <div class="hidden--xs" id="mc_embed_signup">
+                        <form action="https://dicegame.us12.list-manage.com/subscribe/post?u=2c5daa930c3d4727f3bdda0c2&amp;id=6d59a7fec9"
+                              method="post"
+                              id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                              target="_blank" novalidate 
+                              class="block__form validate">
+                            <input type="email" value="" name="EMAIL" id="mce-EMAIL" class="block__form-input input" placeholder="E-mail address">
+                            <div class="clear">
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="block__form-btn btn">
+                            </div>
+                            <!-- <a href="" class="block__form-btn btn">SUBSCRIBE</a> -->
+                        </form>
+                    </div>
                 </div>
 
                 <div class="block__right">
@@ -278,10 +324,23 @@
                     </div>
 
                     <!-- Form -->
-                    <form class="block__form visible--xs">
+                    <!-- <form class="block__form visible--xs">
                         <input type="email" class="block__form-input input" placeholder="E-mail address">
                         <a href="" class="block__form-btn btn">SUBSCRIBE</a>
-                    </form>
+                    </form> -->
+                    
+                    <!-- Form -->
+                    <div class="visible--xs" id="mc_embed_signup">
+                        <form action="https://dicegame.us12.list-manage.com/subscribe/post?u=2c5daa930c3d4727f3bdda0c2&amp;id=6d59a7fec9" method="post"
+                            id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
+                            novalidate class="block__form validate">
+                            <input type="email" value="" name="EMAIL" id="mce-EMAIL" class="block__form-input input" placeholder="E-mail address">
+                            <div class="clear">
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="block__form-btn btn">
+                            </div>
+                            <!-- <a href="" class="block__form-btn btn">SUBSCRIBE</a> -->
+                        </form>
+                    </div>
                 </div>
                 <div class="block__footer">
                     <div class="block__page">
@@ -312,7 +371,12 @@
             </video>
         </div>
     </div>
-
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW69XD5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- script -->
     <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
@@ -323,7 +387,6 @@
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/modal.js"></script>
     <!-- /script -->
-
 
 </body>
 
