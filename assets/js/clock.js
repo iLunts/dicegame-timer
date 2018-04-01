@@ -3,17 +3,17 @@ var clock;
 $(document).ready(function () {
     var clock;
 
+    var date = new Date(2018, 3, 10);
+    var now = new Date();
+    var diff = (date.getTime() / 1000) - (now.getTime() / 1000);
+
     clock = $('.clock').FlipClock({
         clockFace: 'DailyCounter',
-        autoStart: false,
-        callbacks: {
-            stop: function () {
-                $('.message').html('The clock has stopped!')
-            }
-        }
+        autoStart: true,
     });
 
-    clock.setTime(815631);
+    // clock.setTime(815631);
+    clock.setTime(diff);
     clock.setCountdown(true);
     clock.start();
 
