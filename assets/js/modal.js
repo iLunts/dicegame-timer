@@ -8,12 +8,10 @@ $(".modal__overlay, .modal__close").on("click", function () {
 
 function openModal() {
     $(".modal").addClass("open");
-    $('#video-promo').get(0).play();
 }
 
 function closeModal() {
     $(".modal").removeClass("open");
-    $('#video-promo').get(0).pause();
 }
 
 $(document).keyup(function (e) {
