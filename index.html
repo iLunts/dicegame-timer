@@ -9,29 +9,20 @@
     <meta name="author" content="">
     <title>Dicegame</title>
 
-    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="assets/css/style.min.css">
     
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon-32.png">
 
     <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PW69XD5');
-    </script>
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'    
+    }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TDSQRD5');</script>
     <!-- End Google Tag Manager -->
 
     <!-- Mailchimp -->
@@ -43,6 +34,7 @@
             'https://chimpstatic.com/mcjs-connected/js/users/2c5daa930c3d4727f3bdda0c2/e7e2a3af54e242f08de760257.js');
     </script>
     <!-- end Mailchimp -->
+
 
     <script id="mcjs">
         ! function (c, h, i, m, p) {
@@ -364,13 +356,13 @@
         <div class="modal__overlay"></div>
         <div class="modal__body">
             <button class="modal__close">X</button>
-            <iframe height="70%" src="https://www.youtube.com/embed/mZ2bsPHz0QI" allowfullscreen frameborder></iframe>
+            <div id="player"></div>
         </div>
     </div>
     
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW69XD5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDSQRD5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -382,6 +374,7 @@
     <script src="assets/js/clock.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/modal.js"></script>
+    <script src="assets/js/video.js"></script>
     <!-- /script -->
 
 </body>
